@@ -208,7 +208,7 @@ nav {
 
 .fps-products-div {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -254,7 +254,49 @@ nav {
 
 
 
+/* -------------------------------------------------------------------------------------------------- */
+/* satisfied customer div section */
 
+.scs {
+  text-align: center;
+  padding: 0 50px;
+  margin-top: 80px;
+}
+
+.scs-img-vid-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scs-img img {
+  width: 500px;
+  height: 400px;
+}
+
+.scs-vid img {
+  width: 500px;
+  height: 400px;
+}
+
+.scs-h3 {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .scs-img img {
+    width: 400px;
+    height: 300px;
+  }
+  .scs-vid img {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .scs-img-vid-div {
+    flex-direction: column;
+  }
+}
 
 
 
