@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: red;
+}
+
+nav {
+  background-color: black;
+  color: red;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+
+.logo-img {
+  height: 30px;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.logo-link {
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+  height: 25px;
+  display: flex;
+  margin-left: 25px;
+}
+
+.desktop-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.desktop-menu {
+  margin-left: auto;
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.desktop-menu-a:hover {
+  color: white;
+}
+
+.dmcu-btn {
+  background-color: red;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.dmcu-btn:hover {
+  background-color: white;
+  border: 2px solid red;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+.mmcu-btn {
+  background-color: red;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-left: auto;
+    float: right;
+    height: 40px;
+  }
+
+  .hamburger-menu svg {
+    height: 35px;
+    margin-right: 40px;
+  }
+
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("images/hero-image.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+
+.hero-content {
+  display: flex;
+  padding-top: 100px;
+}
+
+.hero-text {
+  color: white;
+  margin: 0 50px;
+  width: 50%;
+  height: 100px;
+}
+
+.up-ht {
+  color: red;
+  text-decoration: underline;
+}
+
+.img-on-hero img {
+  height: 500px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+.hero-text p {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+#himg-btn {
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 943px) {
+  .hero-image {
+    /* height: 1000px; */
+    width: 100%;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .img-on-hero img {
+    height: 400px;
+  }
+
+  .hero-text {
+    width: 100%;
+    /* padding: 0 40px; */
+  }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* about us section */
+.about-us {
+  margin: 100px 0;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 40px;
+}
+
+.about-us p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#au-btn {
+  font-size: 25px;
+  /* padding: 40px; */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* featured product section */
+
+.fps {
+  padding: 40px 20px;
+  background-color: beige;
+}
+
+.fps-products-div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.fps-head-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.fps-img-container {
+  transition: transform 0.4s;
+}
+
+.fps-img-container:hover {
+  transform: scale(1.05);
+  color: red;
+  text-decoration: underline;
+}
+
+.fps-img:hover {
+  border: 2px solid red;
+}
+
+.fps-img-text {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1140px) {
+  .fps-products-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    padding: 0 auto;
+    place-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
